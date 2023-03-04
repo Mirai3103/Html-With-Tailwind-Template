@@ -1,0 +1,17 @@
+{
+    "scripts": {
+        "dev": "concurrently --kill-others \"npm run dev:css\" \"npm run dev:server\"",
+        "dev:css": "tailwindcss -i ./src/tailwind.css -o ./src/index.css --watch",
+        "dev:server": "serve src"
+    },
+    "devDependencies": {
+        "autoprefixer": "^10.4.13",
+        "postcss": "^8.4.21",
+        "tailwindcss": "^3.2.7"
+    },
+    "dependencies": {
+        "concurrently": "^7.6.0",
+        "serve": "^14.2.0"
+    },
+    "license": "MIT"
+}
